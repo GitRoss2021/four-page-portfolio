@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testimonials.html">
+</head>
+<body>
+    <style>
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        grid-row: 10px;
+        gap: 10px 20px; /* row-gap column gap */
+        row-gap: 10px;
+        column-gap: 30px;
+        justify-content: space-evenly;
+        align-items: baseline;
+        }
+
+       .flip-card-front{
+       position: absolute;
+       background-color: rgb(120, 124, 81);
+       width: 120%;
+       height: 220%;
+       transition: transform 1s ease-in-out;
+       }
+
+       .container:hover .flip-card-front{
+       transform: translateX(100%);
+       animation: flip-card 1s ease-in-out;
+       animation-fill-mode: forwards;
+      }
+
+      
+    </style>
+   <footer>
+    <p>Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer> 
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 .flip-card {
   width: 300px;
   height: 200px;
@@ -37,6 +38,7 @@
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  transition: transform 1s;
 }
 
 /* Style the back side */
@@ -87,4 +89,11 @@ a {
   column-gap: 30px;
   justify-content: space-evenly;
   align-items: baseline;
+  
+}
+
+/* Animation*/
+
+.container:hover .flip-card-front{
+  transform: translateX(100%)
 }

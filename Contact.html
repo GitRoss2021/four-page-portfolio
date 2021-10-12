@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      nav{
+        z-index: 3;
+      }
+    </style>
 </head>
 <body>
   <nav>
@@ -24,8 +29,12 @@
       <input type="tel" name="number"placeholder="PHONE_NUMBER">
       <textarea name="message" id="messasge" placeholder="MESSAGE"></textarea>
       <!-- other forms -->
-      <button type="submit">Send</button>
-      <button type="reset">Reset</button> 
+  <div class="resizing">
+    <button type="submit" class="form-button">Send</button>
+    <button type="reset" class="reset">Reset</button> 
+  </div>
+      
       </form>
+     
 </body>
 </html>
